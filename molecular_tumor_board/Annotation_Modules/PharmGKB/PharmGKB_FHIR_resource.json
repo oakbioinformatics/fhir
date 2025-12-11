@@ -1,0 +1,77 @@
+{
+  "resourceType": "Observation",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/therapeutic-implication"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://www.pharmgkb.org",
+      "value": "PA123456789"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "GE",
+          "display": "Genetics"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+        "code": "therapeutic-implication",
+        "display": "Therapeutic Implication"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "effectiveDateTime": "2025-12-04T20:59:26+00:00",
+  "derivedFrom": [
+    {
+      "reference": "Observation/variant-example",
+      "display": "Variant observation"
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://example.org/fhir/CodeSystem/PharmGKB-Phenotype-Category",
+            "code": "metabolizer-status",
+            "display": "Metabolizer status"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+            "code": "11289",
+            "display": "Warfarin"
+          }
+        ]
+      }
+    }
+  ]
+}

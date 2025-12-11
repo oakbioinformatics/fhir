@@ -1,0 +1,6 @@
+|COLUMN NAME           |TYPE |DESCRIPTION                                                           |EXAMPLE                                                        |FHIR PROFILE                          |
+|----------------------|-----|----------------------------------------------------------------------|---------------------------------------------------------------|--------------------------------------|
+|Diseases              |STR  |                                                                      |Lung adenocarcinoma                                            |Variant or Genomic Annotation Profile |
+|ID                    |STR  |CIViC specific UID that is used to represent the concept or structure |185                                                            |Variant or Genomic Annotation Profile |
+|Variant Evidence Score|FLOAT|Represents the accumulation of Evidence                               |4.2                                                            |Variant or Genomic Annotation Profile |
+|Description(?)        |STR  |                                                                      |This variant has moderate evidence supporting drug sensitivity.|Variant or Genomic Annotation Profile |
