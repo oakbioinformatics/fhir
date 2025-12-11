@@ -1,0 +1,117 @@
+{
+  "resourceType": "Observation",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-annotation"
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "GE",
+          "display": "Genetics"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+        "code": "genomic-annotation",
+        "display": "Genomic Annotation"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "effectiveDateTime": "2025-12-04T20:59:23+00:00",
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://www.ensembl.org",
+            "code": "Transcript-ID",
+            "display": "Ensembl Transcript ID"
+          }
+        ]
+      },
+      "valueString": "ENST00000357654"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://identifiers.org/uniprot",
+            "code": "Protein-ID",
+            "display": "UniProt Protein ID"
+          }
+        ]
+      },
+      "valueString": "P38398"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://example.org/fhir/CodeSystem/FATHMM",
+            "code": "Score",
+            "display": "FATHMM Score"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": -3.01,
+        "unit": "score"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://example.org/fhir/CodeSystem/FATHMM",
+            "code": "Converted-Rank-Score",
+            "display": "FATHMM Converted Rank Score"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 0.9123,
+        "unit": "rank score"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://example.org/fhir/CodeSystem/FATHMM",
+            "code": "Predicition",
+            "display": "FATHMM Prediction"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://example.org/fhir/CodeSystem/FATHMM-Prediction",
+            "code": "damaging",
+            "display": "Damaging"
+          }
+        ]
+      }
+    }
+  ]
+}

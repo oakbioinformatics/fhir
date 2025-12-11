@@ -1,0 +1,75 @@
+{
+  "resourceType": "Observation",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-annotation"
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "GE",
+          "display": "Genetics"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+        "code": "genomic-annotation",
+        "display": "Genomic Annotation"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "effectiveDateTime": "2025-12-04T20:59:21+00:00",
+  "component": [
+    {
+      "code": {
+        "text": "CADD Raw Score",
+        "coding": [
+          {
+            "system": "http://example.org/fhir/CodeSystem/CADD",
+            "code": "Score",
+            "display": "CADD Raw Score"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 3.2,
+        "unit": "raw"
+      }
+    },
+    {
+      "code": {
+        "text": "CADD Phred Score",
+        "coding": [
+          {
+            "system": "http://example.org/fhir/CodeSystem/CADD",
+            "code": "Phred",
+            "display": "CADD Phred Score"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 25.6,
+        "unit": "PHRED"
+      }
+    }
+  ]
+}
