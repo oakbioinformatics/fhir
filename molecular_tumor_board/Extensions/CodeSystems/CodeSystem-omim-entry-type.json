@@ -1,0 +1,41 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "omim-entry-type-cs",
+  "url": "http://oakbioinformatics.com/fhir/CodeSystem/omim-entry-type",
+  "version": "1.0.0",
+  "name": "OmimEntryTypeCS",
+  "title": "OMIM Entry Type CodeSystem",
+  "status": "draft",
+  "publisher": "Oak Bioinformatics LLC",
+  "description": "Types of entries in the OMIM (Online Mendelian Inheritance in Man) database.",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 5,
+  "concept": [
+    {
+      "code": "gene",
+      "display": "Gene",
+      "definition": "Gene entry describing a gene locus"
+    },
+    {
+      "code": "phenotype",
+      "display": "Phenotype",
+      "definition": "Phenotype entry describing a clinical phenotype or disease"
+    },
+    {
+      "code": "gene-phenotype",
+      "display": "Gene/Phenotype",
+      "definition": "Combined entry with both gene and phenotype information"
+    },
+    {
+      "code": "predominantly-phenotype",
+      "display": "Predominantly Phenotype",
+      "definition": "Entry where the phenotype is the primary focus"
+    },
+    {
+      "code": "moved-removed",
+      "display": "Moved/Removed",
+      "definition": "Entry that has been moved or removed"
+    }
+  ]
+}

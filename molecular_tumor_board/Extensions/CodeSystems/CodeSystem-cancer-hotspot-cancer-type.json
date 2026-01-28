@@ -1,0 +1,121 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cancer-hotspot-cancer-type-cs",
+  "url": "http://oakbioinformatics.com/fhir/CodeSystem/cancer-hotspot-cancer-type",
+  "version": "1.0.0",
+  "name": "CancerHotspotCancerTypeCS",
+  "title": "Cancer Hotspot Cancer Types CodeSystem",
+  "status": "draft",
+  "publisher": "Oak Bioinformatics LLC",
+  "description": "Cancer types as categorized in cancer hotspot databases (e.g., cancerhotspots.org).",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 21,
+  "concept": [
+    {
+      "code": "blood",
+      "display": "Blood",
+      "definition": "Hematologic malignancies including leukemia and lymphoma"
+    },
+    {
+      "code": "bowel",
+      "display": "Bowel",
+      "definition": "Colorectal and intestinal cancers"
+    },
+    {
+      "code": "cnsbrain",
+      "display": "CNS/Brain",
+      "definition": "Central nervous system and brain tumors"
+    },
+    {
+      "code": "breast",
+      "display": "Breast",
+      "definition": "Breast carcinoma"
+    },
+    {
+      "code": "lung",
+      "display": "Lung",
+      "definition": "Lung cancers including NSCLC and SCLC"
+    },
+    {
+      "code": "skin",
+      "display": "Skin",
+      "definition": "Skin cancers including melanoma"
+    },
+    {
+      "code": "prostate",
+      "display": "Prostate",
+      "definition": "Prostate carcinoma"
+    },
+    {
+      "code": "ovary",
+      "display": "Ovary",
+      "definition": "Ovarian cancers"
+    },
+    {
+      "code": "pancreas",
+      "display": "Pancreas",
+      "definition": "Pancreatic cancers"
+    },
+    {
+      "code": "liver",
+      "display": "Liver",
+      "definition": "Hepatocellular and liver cancers"
+    },
+    {
+      "code": "kidney",
+      "display": "Kidney",
+      "definition": "Renal cell carcinoma and kidney cancers"
+    },
+    {
+      "code": "bladder",
+      "display": "Bladder",
+      "definition": "Bladder cancers"
+    },
+    {
+      "code": "thyroid",
+      "display": "Thyroid",
+      "definition": "Thyroid carcinoma"
+    },
+    {
+      "code": "stomach",
+      "display": "Stomach",
+      "definition": "Gastric cancers"
+    },
+    {
+      "code": "esophagus",
+      "display": "Esophagus",
+      "definition": "Esophageal cancers"
+    },
+    {
+      "code": "head_neck",
+      "display": "Head and Neck",
+      "definition": "Head and neck squamous cell carcinomas"
+    },
+    {
+      "code": "uterus",
+      "display": "Uterus",
+      "definition": "Uterine and endometrial cancers"
+    },
+    {
+      "code": "cervix",
+      "display": "Cervix",
+      "definition": "Cervical cancers"
+    },
+    {
+      "code": "bone",
+      "display": "Bone",
+      "definition": "Bone cancers including osteosarcoma"
+    },
+    {
+      "code": "soft_tissue",
+      "display": "Soft Tissue",
+      "definition": "Soft tissue sarcomas"
+    },
+    {
+      "code": "other",
+      "display": "Other",
+      "definition": "Other cancer types not otherwise categorized"
+    }
+  ]
+}

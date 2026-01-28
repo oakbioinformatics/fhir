@@ -1,0 +1,31 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "grasp-cs",
+  "url": "http://oakbioinformatics.com/fhir/CodeSystem/grasp",
+  "version": "1.0.0",
+  "name": "GraspCS",
+  "title": "GRASP CodeSystem",
+  "status": "draft",
+  "publisher": "Oak Bioinformatics LLC",
+  "description": "Codes for GRASP (Genome-Wide Repository of Associations Between SNPs and Phenotypes) annotation elements.",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 3,
+  "concept": [
+    {
+      "code": "nhlbi-key",
+      "display": "NHLBI Key",
+      "definition": "NHLBI (NIH) unique identifier for the GRASP record"
+    },
+    {
+      "code": "pmid",
+      "display": "PMID",
+      "definition": "PubMed ID of the publication supporting the association"
+    },
+    {
+      "code": "phenotype",
+      "display": "Phenotype",
+      "definition": "Disease or trait associated with the variant"
+    }
+  ]
+}

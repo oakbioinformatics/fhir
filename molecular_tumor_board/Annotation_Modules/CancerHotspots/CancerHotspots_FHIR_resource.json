@@ -1,0 +1,124 @@
+{
+  "resourceType": "Observation",
+  "id": "cancer-hotspots-example",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-annotation"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://oakbioinformatics.com/fhir/StructureDefinition/cancer-hotspot-cancer-types",
+      "extension": [
+        {
+          "url": "cancerType",
+          "extension": [
+            {
+              "url": "type",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://oakbioinformatics.com/fhir/CodeSystem/cancer-hotspot-cancer-type",
+                    "code": "blood",
+                    "display": "Blood"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "count",
+              "valueInteger": 1
+            }
+          ]
+        },
+        {
+          "url": "cancerType",
+          "extension": [
+            {
+              "url": "type",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://oakbioinformatics.com/fhir/CodeSystem/cancer-hotspot-cancer-type",
+                    "code": "bowel",
+                    "display": "Bowel"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "count",
+              "valueInteger": 1
+            }
+          ]
+        },
+        {
+          "url": "cancerType",
+          "extension": [
+            {
+              "url": "type",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "system": "http://oakbioinformatics.com/fhir/CodeSystem/cancer-hotspot-cancer-type",
+                    "code": "cnsbrain",
+                    "display": "CNS/Brain"
+                  }
+                ]
+              }
+            },
+            {
+              "url": "count",
+              "valueInteger": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "GE",
+          "display": "Genetics"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+        "code": "genomic-annotation",
+        "display": "Genomic Annotation"
+      }
+    ],
+    "text": "Cancer Hotspots Annotation"
+  },
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "effectiveDateTime": "2025-12-04T20:59:25+00:00",
+  "derivedFrom": [
+    {
+      "reference": "Observation/variant-example",
+      "display": "Variant observation"
+    }
+  ],
+  "note": [
+    {
+      "text": "This variant has been observed in the Cancer Hotspots database across multiple cancer types."
+    }
+  ]
+}

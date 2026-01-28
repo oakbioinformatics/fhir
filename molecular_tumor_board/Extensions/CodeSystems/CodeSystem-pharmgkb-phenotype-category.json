@@ -1,0 +1,51 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "pharmgkb-phenotype-category-cs",
+  "url": "http://oakbioinformatics.com/fhir/CodeSystem/pharmgkb-phenotype-category",
+  "version": "1.0.0",
+  "name": "PharmGKBPhenotypeCategoryCS",
+  "title": "PharmGKB Phenotype Category CodeSystem",
+  "status": "draft",
+  "publisher": "Oak Bioinformatics LLC",
+  "description": "Clinical phenotype categories used by PharmGKB to classify gene-drug interactions and pharmacogenomic effects.",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 7,
+  "concept": [
+    {
+      "code": "metabolizer-status",
+      "display": "Metabolizer Status",
+      "definition": "Classification of drug metabolizing enzyme activity (e.g., poor, intermediate, normal, rapid, ultra-rapid metabolizer)"
+    },
+    {
+      "code": "efficacy",
+      "display": "Efficacy",
+      "definition": "Drug efficacy or therapeutic response"
+    },
+    {
+      "code": "toxicity",
+      "display": "Toxicity",
+      "definition": "Adverse drug reactions or toxicity risk"
+    },
+    {
+      "code": "dosage",
+      "display": "Dosage",
+      "definition": "Drug dosage requirements based on genotype"
+    },
+    {
+      "code": "pk",
+      "display": "Pharmacokinetics",
+      "definition": "Drug absorption, distribution, metabolism, or excretion"
+    },
+    {
+      "code": "pd",
+      "display": "Pharmacodynamics",
+      "definition": "Drug mechanism of action or target interaction"
+    },
+    {
+      "code": "other",
+      "display": "Other",
+      "definition": "Other pharmacogenomic phenotype categories"
+    }
+  ]
+}

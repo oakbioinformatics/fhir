@@ -1,5 +1,6 @@
 {
   "resourceType": "Observation",
+  "id": "civic-example",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-annotation"

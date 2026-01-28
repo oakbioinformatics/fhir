@@ -1,0 +1,132 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "omim-entry-reference",
+  "url": "http://oakbioinformatics.com/fhir/StructureDefinition/omim-entry-reference",
+  "version": "1.0.0",
+  "name": "OmimEntryReference",
+  "title": "OMIM Entry Reference",
+  "status": "draft",
+  "publisher": "Oak Bioinformatics LLC",
+  "description": "An extension to capture OMIM (Online Mendelian Inheritance in Man) entry IDs that provide disease and gene association information for variants.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Observation"
+    },
+    {
+      "type": "element",
+      "expression": "Condition"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "OMIM Entry Reference",
+        "definition": "An extension to capture OMIM (Online Mendelian Inheritance in Man) entry IDs that provide disease and gene association information for variants."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "min": 1,
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Extension.extension:entryId",
+        "path": "Extension.extension",
+        "sliceName": "entryId",
+        "short": "OMIM Entry ID",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:entryId.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "entryId"
+      },
+      {
+        "id": "Extension.extension:entryId.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:entryType",
+        "path": "Extension.extension",
+        "sliceName": "entryType",
+        "short": "Type of OMIM entry",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:entryType.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "entryType"
+      },
+      {
+        "id": "Extension.extension:entryType.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://oakbioinformatics.com/fhir/ValueSet/omim-entry-type"
+        }
+      },
+      {
+        "id": "Extension.extension:title",
+        "path": "Extension.extension",
+        "sliceName": "title",
+        "short": "OMIM entry title",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:title.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "title"
+      },
+      {
+        "id": "Extension.extension:title.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://oakbioinformatics.com/fhir/StructureDefinition/omim-entry-reference"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

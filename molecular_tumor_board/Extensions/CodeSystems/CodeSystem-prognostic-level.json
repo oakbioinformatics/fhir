@@ -1,0 +1,31 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "prognostic-level-cs",
+  "url": "http://oakbioinformatics.com/fhir/CodeSystem/prognostic-level",
+  "version": "1.0.0",
+  "name": "PrognosticLevelCS",
+  "title": "Prognostic Evidence Level CodeSystem",
+  "status": "draft",
+  "publisher": "Oak Bioinformatics LLC",
+  "description": "Evidence levels for prognostic significance of genomic variants, based on OncoKB classification.",
+  "caseSensitive": true,
+  "content": "complete",
+  "count": 3,
+  "concept": [
+    {
+      "code": "Px1",
+      "display": "Level Px1",
+      "definition": "Guideline-recognized biomarker prognostic in the specific type of tumor with well-powered studies"
+    },
+    {
+      "code": "Px2",
+      "display": "Level Px2",
+      "definition": "Guideline-recognized biomarker prognostic in the specific type of tumor with limited data"
+    },
+    {
+      "code": "Px3",
+      "display": "Level Px3",
+      "definition": "Investigational prognostic biomarker"
+    }
+  ]
+}

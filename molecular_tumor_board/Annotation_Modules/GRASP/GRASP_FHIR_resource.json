@@ -1,0 +1,104 @@
+{
+  "resourceType": "Observation",
+  "id": "grasp-example",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/molecular-consequence"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://oakbioinformatics.com/fhir/StructureDefinition/pubmed-reference",
+      "extension": [
+        {
+          "url": "pmid",
+          "valueInteger": 19430479
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://grasp.nhlbi.nih.gov",
+      "value": "GRASP_290123"
+    }
+  ],
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v2-0074",
+          "code": "GE",
+          "display": "Genetics"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/tbd-codes-cs",
+        "code": "molecular-consequence",
+        "display": "Molecular Consequence"
+      }
+    ],
+    "text": "GRASP Phenotype Association"
+  },
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "effectiveDateTime": "2025-12-04T20:59:25+00:00",
+  "derivedFrom": [
+    {
+      "reference": "Observation/variant-example",
+      "display": "Variant observation"
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://oakbioinformatics.com/fhir/CodeSystem/grasp",
+            "code": "nhlbi-key",
+            "display": "NHLBI Key"
+          }
+        ]
+      },
+      "valueString": "GRASP_290123"
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://oakbioinformatics.com/fhir/CodeSystem/grasp",
+            "code": "pmid",
+            "display": "PMID"
+          }
+        ]
+      },
+      "valueInteger": 19430479
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://oakbioinformatics.com/fhir/CodeSystem/grasp",
+            "code": "phenotype",
+            "display": "Phenotype"
+          }
+        ]
+      },
+      "valueString": "Systolic blood pressure"
+    }
+  ]
+}
